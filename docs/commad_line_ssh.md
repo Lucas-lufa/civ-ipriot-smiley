@@ -31,6 +31,7 @@ cd path\to\your\file
 
 ```bash
 scp .\your_file.extension pi@pi-XX.local:~Documents/lucas/smiley
+scp files pi@pi-04.local:~Documents/lucas/smiley
 ```
 **Tip**: add the `-r` switch to copy a directory.
 

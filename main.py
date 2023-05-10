@@ -33,13 +33,15 @@ if __name__ == '__main__':
     # with an abstract method).
     smiley.blink()
 
-    input()
+    #input()
 
     sad = Sad()
     sad.change_complexation(smiley.BLUE, smiley.BLANK)
     sad.show()
     time.sleep(1)
     sad.blink()
+
+    #input()
 
 
 

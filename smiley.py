@@ -14,8 +14,8 @@ class Smiley:
         self.sense_hat = SenseHat()
         self.complexation()
 
-    def complexation(self, complextion=YELLOW, contrast=BLANK):
-        Y = complextion
+    def complexation(self, complexation=YELLOW, contrast=BLANK):
+        Y = complexation
         O = contrast
         self.pixels = [
             O, Y, Y, Y, Y, Y, Y, O,
@@ -27,7 +27,7 @@ class Smiley:
             Y, Y, Y, Y, Y, Y, Y, Y,
             O, Y, Y, Y, Y, Y, Y, O,
         ]
-        self.my_complextion = complextion
+        self.my_complexation = complexation
         self.contrast = contrast
 
     def dim_display(self, dimmed=True):
