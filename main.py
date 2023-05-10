@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # the method .show() of the base class {Smiley} will be
     # used in stead. There is no need to specify the base
     # class, like in other, statically typed, languages.
-    smiley.change_complexation(smiley.YELLOW, smiley.BLANK)    
+     
     smiley.show()
 
     # Just a short delay
@@ -32,6 +32,8 @@ if __name__ == '__main__':
     # is defined as an interface (i.e., an abstract base class
     # with an abstract method).
     smiley.blink()
+
+    input()
 
     sad = Sad()
     sad.change_complexation(smiley.BLUE, smiley.BLANK)

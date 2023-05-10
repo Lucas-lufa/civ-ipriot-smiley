@@ -18,7 +18,7 @@ class Happy(Smiley, Blinkable):
         self.draw_mouth()
         self.draw_eyes()
 
-    def change_complexation(self, colour=Smiley.GREEN, contrast=Smiley.RED):
+    def change_complexation(self, colour=Smiley.YELLOW, contrast=Smiley.BLANK):
             self.complexation(colour,contrast)
             self.draw_mouth()
             self.draw_eyes()
@@ -38,7 +38,7 @@ class Happy(Smiley, Blinkable):
         """
         eyes = [10, 13, 18, 21]
         for pixel in eyes:
-            self.pixels[pixel] = self.contrast if wide_open else self.colour
+            self.pixels[pixel] = self.contrast if wide_open else self.my_complextion
 
     def blink(self, delay=0.25):
         """

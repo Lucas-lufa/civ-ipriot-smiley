@@ -11,7 +11,7 @@ Ensure your Raspberry Pi is connected to the same network as your computer. Find
 In PowerShell, enter the following command, replacing `XX` with the 2-digit number from the sticker:
 
 ```bash
-ssh pi@pi-XX.local
+ssh pi@pi-05.local
 ```
 
 3. Enter the password when prompted. In this case, the password is `Pi3.14`.
@@ -30,7 +30,7 @@ cd path\to\your\file
 2. Use the SCP (Secure Copy) command to transfer the file to the Raspberry Pi. Replace `your_file.extension` with the actual filename and extension, and `XX` with the 2-digit number from the sticker:
 
 ```bash
-scp .\your_file.extension pi@pi-XX.local:/path/on/pi
+scp .\your_file.extension pi@pi-XX.local:~Documents/lucas/smiley
 ```
 **Tip**: add the `-r` switch to copy a directory.
 
